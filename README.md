@@ -40,12 +40,12 @@ Install dependencies
 
 bash
 Copy code
-npm install
+pnpm install
 Start the development server
 
 bash
 Copy code
-pnpm run
+pnpm dev
 Then open http://localhost:5173 in your browser.
 
 🧠 How to Play
