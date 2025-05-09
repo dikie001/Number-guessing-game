@@ -1,4 +1,3 @@
-import NumberGuessingGame from "./game/Game"
 import GamePage from "./game/GamePage"
 
 const App = () => {
