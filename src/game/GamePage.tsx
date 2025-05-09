@@ -12,14 +12,13 @@ const GamePage: React.FC = () => {
   const [inputNum, setInputNum] = useState<number>();
   const [feedBack, setFeedBack] = useState("");
   const [type, setType] = useState<number>();
-  const [match, setMatch] = useState<number>();
   const [isCorrect, setIsCorrect] = useState(false);
   const [isFailed, setIsFailed] = useState(false);
 
   useEffect(() => {
     setStartModal(true);
     setIsCorrect(false);
-    setIsFailed(false)
+    setIsFailed(false);
   }, []);
 
   useEffect(() => {
@@ -32,7 +31,7 @@ const GamePage: React.FC = () => {
   //start game
   const startGame = () => {
     setFeedBack("");
-    setIsFailed(false)
+    setIsFailed(false);
     setAttempts(5);
     setStartModal(false);
     setShowNotif(true);
@@ -48,7 +47,6 @@ const GamePage: React.FC = () => {
 
   //guess function
   const guessNum = () => {
-    setMatch(inputNum! - Number(guess));
     setAttempts((prev) => prev - 1);
     if (attempts === 1) {
       failed();
@@ -88,7 +86,7 @@ const GamePage: React.FC = () => {
 
   const mainFunction = () => {
     setIsCorrect(false);
-    setIsFailed(false)
+    setIsFailed(false);
     setFeedBack("");
 
     const num = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -164,7 +162,9 @@ const GamePage: React.FC = () => {
       )}
       {/* Main */}
       <div
-        className={`${isCorrect && "blur-lg bg-black/70"} ${isFailed && "blur-lg bg-black/70"} ${
+        className={`${isCorrect && "blur-lg bg-black/70"} ${
+          isFailed && "blur-lg bg-black/70"
+        } ${
           startModal && " blur-sm bg-black/60"
         } bg-black/30 m-auto max-w-120 w-full  max-md:p-3 relative max-sm:h-dvh sm:h-150 rounded-md shadow-md shadow-black`}
       >
