@@ -162,11 +162,11 @@ const GamePage: React.FC = () => {
       )}
       {/* Main */}
       <div
-        className={`${isCorrect && "blur-lg bg-black/70"} ${
-          isFailed && "blur-lg bg-black/70"
-        } ${
-          startModal && " blur-sm bg-black/60"
-        } bg-black/30 m-auto max-w-120 w-full  max-md:p-3 relative max-sm:h-dvh sm:h-150 rounded-md shadow-md shadow-black`}
+        className={`
+        ${isCorrect && "blur-lg bg-black/70"} 
+        ${isFailed && "blur-lg bg-black/70"} 
+        ${startModal && " blur-sm bg-black/60"}
+         bg-black/30 m-auto max-w-120 w-full  max-md:p-3 relative max-sm:h-dvh sm:h-150 rounded-md shadow-md shadow-black`}
       >
         {/* Results Notif */}
         <div
