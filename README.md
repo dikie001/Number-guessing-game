@@ -6,7 +6,7 @@ A simple yet stylish number guessing game built with **React**, **TypeScript**, 
 
 ## 🚀 Live Demo
 
-> Add your deployed link here (e.g. Vercel, Netlify, etc.)
+>https://number-guessing-game-ngd1.vercel.app/
 
 ---
 
@@ -45,7 +45,7 @@ Start the development server
 
 bash
 Copy code
-npm run dev
+pnpm run
 Then open http://localhost:5173 in your browser.
 
 🧠 How to Play
